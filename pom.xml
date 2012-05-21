@@ -25,7 +25,7 @@
     <version>28</version>
   </parent>
   <artifactId>gwt-maven-plugin</artifactId>
-  <version>2.4.0-1-SNAPSHOT</version>
+  <version>2.4.0-1-MHI-1</version>
   <packaging>maven-plugin</packaging>
   <name>Maven GWT Plugin</name>
   <description>
@@ -603,6 +603,19 @@
         <enabled>true</enabled>
       </snapshots>
     </pluginRepository>
-  </pluginRepositories>  
+  </pluginRepositories>
+
+  <distributionManagement>
+    <repository>
+      <id>releases</id>
+      <name>Internal Releases</name>
+      <url>https://repo.medicomhealth.com/content/repositories/medicom-releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>Internal Snapshots</name>
+      <url>https://repo.medicomhealth.com/content/repositories/medicom-snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>  
 
 </project>
